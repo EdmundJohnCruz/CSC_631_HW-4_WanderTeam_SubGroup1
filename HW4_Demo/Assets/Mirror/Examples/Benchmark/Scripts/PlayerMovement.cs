@@ -6,10 +6,25 @@ namespace Mirror.Examples.Benchmark
     {
         public float speed = 5;
 
-        void Update()
+        [Client]
+        private void Update()
         {
+
+            if (!hasAuthority) { return; }
             if (!isLocalPlayer) return;
 
+            CmdMove();
+        }
+        [Command]
+        private void CmdMove()
+        {
+            RpcMove();
+        }
+
+
+        [ClientRpc]
+        private void RpcMove()
+        {
             float h = Input.GetAxisRaw("Horizontal");
             float v = Input.GetAxisRaw("Vertical");
 

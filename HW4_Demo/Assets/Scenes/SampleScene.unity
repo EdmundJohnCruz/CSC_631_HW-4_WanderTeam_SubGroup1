@@ -4170,7 +4170,7 @@ GameObject:
   - component: {fileID: 376909232}
   - component: {fileID: 376909231}
   - component: {fileID: 376909230}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NetworkManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4270,7 +4270,7 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs:
-  - {fileID: 0}
+  - {fileID: 1802518988550461584, guid: f32a321044e129846936e64e701acd01, type: 3}
 --- !u!4 &376909234
 Transform:
   m_ObjectHideFlags: 0
