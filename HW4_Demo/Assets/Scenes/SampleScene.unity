@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 61431655}
   - component: {fileID: 61431657}
   - component: {fileID: 61431656}
-  - component: {fileID: 61431658}
   m_Layer: 0
   m_Name: Tilemap_Background
   m_TagString: Untagged
@@ -148,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61431654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.5, y: -47.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 239752137}
@@ -4426,7 +4425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064126989}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.5, y: -47.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 239752137}
@@ -5719,8 +5718,8 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!251 &2064126993
-PlatformEffector2D:
+--- !u!19719996 &2064126993
+TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
