@@ -37,9 +37,9 @@ public class ChatBehavior : NetworkBehaviour
         /*Two functions below tell client don't do anything if Enter key isnt pressed or string "is null or white space"*/
         if (!Input.GetKeyDown(KeyCode.Return)) { return; }
 
-        if (string.IsNullOrWhiteSpace(message)) { return; }
+        if (string.IsNullOrWhiteSpace(inputField.text)) { return; }
 
-        CmdSendMessage(message); //Server sends the input field text, which is just the message
+        CmdSendMessage(inputField.text); //Server sends the input field text, which is just the message
 
         inputField.text = string.Empty;//When message is sent, it clears the input field so that a user can type a new message
     }
